@@ -1,0 +1,40 @@
+/*
+Theme Name: Skeleton TRDC
+Theme URI: http://www.tomroyal.com
+Author: Tom Royal
+Author URI: http://www.tomroyal.com
+Description: A very plain, very simple theme version of www.getskeleton.com
+Version: 1.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: skeletontrdc
+Tags: 
+*/
+
+.headerline {
+    margin-top: 10%;
+}
+
+.entry-title a {
+    text-decoration-line: none;
+}
+
+.screen-reader-text {
+  visibility: hidden;
+}
+
+#menu-topmenu li {
+    display: inline;
+    margin-right: 2.5%;
+}
+
+#menu-topmenu li a {
+    text-decoration-line: none;
+    color: #000;
+}
+
+@media screen and (max-width: 600px){
+  #menu-topmenu li {
+      display: list-item;
+  }
+}
