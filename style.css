@@ -12,7 +12,7 @@ Tags:
 */
 
 .headerline {
-    margin-top: 10%;
+    margin-top: 20px;
 }
 
 .entry-title a {
@@ -32,9 +32,28 @@ Tags:
     text-decoration-line: none;
     color: #000;
 }
+.burgerrow {
+  display: none;
+}
+.navmenu {
+  display: block;
+}
+.hamburger {
+  background-color:#000;
+  color:#fff;
+  position: absolute;
+  top: 0px;
+  right: 0px;  
+}
 
 @media screen and (max-width: 600px){
   #menu-topmenu li {
-      display: list-item;
+      display: block;
+  }
+  .navmenu {
+    display: none;
+  }
+  .burgerrow {
+    display: block;
   }
 }

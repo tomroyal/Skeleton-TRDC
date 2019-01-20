@@ -1,5 +1,5 @@
 <?php
-
+// Skeleton TRDC
 // single post
 
 get_header(); ?>

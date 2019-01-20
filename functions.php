@@ -2,13 +2,15 @@
 // Skeleton TRDC
 // functions
 
-function skeletontrdc_enq_css() {
+function skeletontrdc_enq_scripts() {
     wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
     wp_enqueue_style( 'skeleton', get_template_directory_uri() . '/css/skeleton.css' );
     wp_enqueue_style( 'skeleton-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'Raleway-font', '//fonts.googleapis.com/css?family=Raleway:400,300,600' );
+    wp_enqueue_style( 'mmmburgers', get_template_directory_uri() . '/css/hamburgers.min.css' );
+    wp_enqueue_script('my-custom-script', get_template_directory_uri() .'/js/burgermenu.js', array('jquery'), null, true);
 };
-add_action( 'wp_enqueue_scripts', 'skeletontrdc_enq_css' );
+add_action( 'wp_enqueue_scripts', 'skeletontrdc_enq_scripts' );
 
 // sidebar
 
