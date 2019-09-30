@@ -74,7 +74,6 @@ add_filter( 'image_size_names_choose', 'add_custom_sizes' );
 
 function make_old_images_respond($content) {
    global $post;
-   //$pattern ="/<img(.*?)class=\"(.*?)\"(.*?)height=\"(.*?)\"(.*?)>/i";
    $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
    $replacement = '<img$1class="$2 u-full-width "$3>';
    $content = preg_replace($pattern, $replacement, $content);
@@ -84,5 +83,13 @@ function make_old_images_respond($content) {
    return $content;
 }
 add_filter('the_content', 'make_old_images_respond');
+
+// enable featured image
+
+function enable_featured_image() {
+    add_theme_support( 'post-thumbnails' );
+}
+
+add_action( 'after_setup_theme', 'enable_featured_image' );
 
 ?>

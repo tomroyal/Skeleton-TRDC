@@ -32,18 +32,26 @@ Tags:
     text-decoration-line: none;
     color: #000;
 }
+
 .burgerrow {
   display: none;
 }
+
 .navmenu {
   display: block;
 }
+
 .hamburger {
   background-color:#000;
   color:#fff;
   position: absolute;
   top: 0px;
   right: 0px;  
+  margin-top: 15px!important;
+}
+.featuredimage{
+  height: 100%;
+  margin-bottom: 25px;	
 }
 
 @media screen and (max-width: 600px){
@@ -55,5 +63,10 @@ Tags:
   }
   .burgerrow {
     display: block;
+    height: 0px;
+  }
+  .menu-item {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
   }
 }
